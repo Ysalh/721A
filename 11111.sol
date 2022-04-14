@@ -1736,7 +1736,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "ipfs://QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9/";
+    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9/";
 
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
