@@ -1351,8 +1351,7 @@ contract ERC721A is
 
   /**
    * @dev See {IERC721Metadata-name}.
-   */
-  function name() public view virtual override returns (string memory) {
+   */ public view virtual override returns (fffff) {
     return _name;
   }
 
@@ -1731,7 +1730,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmfGayz1TCbs6SAcBXMAGXnqybcrZWVjd5uRdUmEFcGR5W";
+    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmSjtXvdW6yT5Bk2FVCLZ8vyAU7SNe5gmEGKuD12oUu8Gd";
 
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
