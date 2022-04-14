@@ -1607,7 +1607,7 @@ abstract contract Ownable is Context {
     }
 }
 
-// File: HarrysContract.sol
+// File: ABC CLUB.sol
 
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
@@ -1616,16 +1616,16 @@ pragma solidity ^0.8.11;
 
 
 
-contract HarrysContract is ERC721A, Ownable, Pausable {
+contract ABC Club is ERC721A, Ownable, Pausable {
     using SafeMath for uint256;
 
     event PermanentURI(string _value, uint256 indexed _id);
     mapping(address => uint) private _mintings;
 
-    uint public constant MAX_SUPPLY = 666;
-    uint public constant PRICE = 1e15; //0 ETH
-    uint public constant MAX_PER_MINT = 3;
-    uint public constant MAX_PER_WALLET = 12;
+    uint public constant MAX_SUPPLY = 555;
+    uint public constant PRICE = 1e15; //0.005 ETH
+    uint public constant MAX_PER_MINT = 5;
+    uint public constant MAX_PER_WALLET = 15;
 
     string public _contractBaseURI= "https://gateway.pinata.cloud/ipfs/QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9/";
     
