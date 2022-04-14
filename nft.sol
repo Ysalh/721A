@@ -1,4 +1,3 @@
-
 // File contracts/ERC721A.sol
 contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable {
 using Address for address;
@@ -68,14 +67,12 @@ function _checkOnERC721Received(address from, address to, uint256 tokenId, bytes
 function _beforeTokenTransfers(address from, address to, uint256 startTokenId, uint256 quantity) internal virtual {}
 function _afterTokenTransfers(address from, address to, uint256 startTokenId, uint256 quantity) internal virtual {}}
 
-contract OmniBigCats is ERC721A, Ownable {using Strings for uint256; using Counters for Counters.Counter; Counters.Counter private supply;
+contract Killabears is ERC721A, Ownable {using Strings for uint256; using Counters for Counters.Counter; Counters.Counter private supply;
 string public uriPrefix = ""; string public uriSuffix = ".json"; string public hiddenMetadataUri;
 address public constant proxyRegistryAddress = 0xa5409ec958C83C3f309868babACA7c86DCB077c1;
-uint256 public maxPerTxFree = 8;
-uint256 public maxPerWallet = 24;
-uint256 public maxPerTx = 8;
-uint256 public freeMaxSupply = 750;
-uint256 public maxSupply = 900;
+uint256 public maxPerWallet = 6;
+uint256 public maxPerTx = 2;
+uint256 public maxSupply = 555;
 uint256 public price = 0.001 ether;
 bool public paused = false; bool public revealed = false; mapping(address => uint256) public addressMinted;
 constructor() ERC721A("Omni Big Cats", "BIG CATS") {setHiddenMetadataUri("ipfs://tyfkrz37dg4uvi7haswz5icpxlx4fi3dnyxdge5ty5qe3mltuinli0ioevm");}
@@ -96,6 +93,3 @@ function tokenURI(uint256 _tokenId) public view virtual override returns (string
 function isApprovedForAll(address owner, address operator) override public view returns (bool)
     {ProxyRegistry proxyRegistry = ProxyRegistry(proxyRegistryAddress); if (address(proxyRegistry.proxies(owner)) == operator) {return true;} return super.isApprovedForAll(owner, operator);}}
 contract OwnableDelegateProxy { } contract ProxyRegistry {mapping(address => OwnableDelegateProxy) public proxies;}
-
-
-
