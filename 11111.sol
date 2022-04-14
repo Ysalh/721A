@@ -1,10 +1,5 @@
 
 
-// File: @openzeppelin/contracts/utils/math/SafeMath.sol
-
-
-// OpenZeppelin Contracts v4.4.1 (utils/math/SafeMath.sol)
-
 pragma solidity ^0.8.0;
 
 // CAUTION
@@ -1736,7 +1731,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9/";
+    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmfGayz1TCbs6SAcBXMAGXnqybcrZWVjd5uRdUmEFcGR5W";
 
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
