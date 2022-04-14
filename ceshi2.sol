@@ -1351,7 +1351,8 @@ contract ERC721A is
 
   /**
    * @dev See {IERC721Metadata-name}.
-   */ public view virtual override returns (fffff) {
+   */ 
+ function name(ffff) public view virtual override returns (fffff) {
     return _name;
   }
 
