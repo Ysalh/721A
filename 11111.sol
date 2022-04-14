@@ -1,3 +1,10 @@
+
+
+// File: @openzeppelin/contracts/utils/math/SafeMath.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/math/SafeMath.sol)
+
 pragma solidity ^0.8.0;
 
 // CAUTION
@@ -1729,7 +1736,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "ipfs://QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9";
+    string private baseURI = "ipfs://QmQayyaYeBkb4PJJbEHyQf1YU1XhHKDVMKxg3y8gUbKAs9/";
 
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
@@ -1768,7 +1775,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
 
     constructor(
-    ) ERC721A("InterFaceDao", "Int", 100, maxSupply) {
+    ) ERC721A("ffff", "Int", 100, maxSupply) {
     }
 
 modifier isCorrectPayment(uint256 price, uint256 numberOfTokens) {
