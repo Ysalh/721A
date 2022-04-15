@@ -1736,7 +1736,7 @@ contract HanddrawnMoonbird is ERC721A, IERC2981, Ownable, ReentrancyGuard {
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
 
-    uint256 public constant PUBLIC_SALE_PRICE = 0.005 ether;
+    uint256 public constant PUBLIC_SALE_PRICE = 0 ether;
     bool public isPublicSaleActive = false;
 
 
