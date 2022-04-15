@@ -1725,18 +1725,18 @@ pragma solidity ^0.8.0;
 
 
 
-contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
+contract Hand drawn Moonbird is ERC721A, IERC2981, Ownable, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Strings for uint256;
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "https://gateway.pinata.cloud/ipfs/QmSjtXvdW6yT5Bk2FVCLZ8vyAU7SNe5gmEGKuD12oUu8Gd";
+    string private baseURI = "ipfs://QmeRP5DoPJd2FV9o8EcgfynuLHAcvU6jQdX6i2V71BjYeC";
 
     uint256 public constant MAX_MINTS_PER_TX = 3;
     uint256 public maxSupply = 999;
 
-    uint256 public constant PUBLIC_SALE_PRICE = 0 ether;
+    uint256 public constant PUBLIC_SALE_PRICE = 0.005 ether;
     bool public isPublicSaleActive = false;
 
 
@@ -1770,7 +1770,7 @@ contract fffff is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
 
     constructor(
-    ) ERC721A("ffff", "Int", 100, maxSupply) {
+    ) ERC721A("Hand drawn Moonbird", "Moonbird", 100, maxSupply) {
     }
 
 modifier isCorrectPayment(uint256 price, uint256 numberOfTokens) {
