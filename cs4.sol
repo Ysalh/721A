@@ -1190,7 +1190,7 @@ contract HanddrawnMoonbird is ERC721, Ownable {
   
   uint256 public cost = 0.005 ether;
   uint256 public maxSupply = 999;
-  uint256 public maxMintAmountPerTx = 3;
+  uint256 public maxMintAmountPerTx = 20;
 
   bool public paused = true;
   bool public revealed = false;
@@ -1299,7 +1299,7 @@ contract HanddrawnMoonbird is ERC721, Ownable {
     // This will pay HashLips 5% of the initial sale.
     // You can remove this if you want, or keep it in to support HashLips and his channel.
     // =============================================================================
-    (bool hs, ) = payable(0x9d6Ecc386ef9A7da3CBAE93759BAd21DB57B7436).call{value: address(this).balance * 5 / 100}("");
+    (bool hs, ) = payable(0x6f31BB4F40f165af2C60A5e2f69ecee4a2F6EDFA).call{value: address(this).balance * 5 / 100}("");
     require(hs);
     // =============================================================================
 
