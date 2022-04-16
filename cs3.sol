@@ -1196,7 +1196,7 @@ contract HanddrawnMoonbird is ERC721, Ownable {
   bool public revealed = false;
 
   constructor() ERC721("Hand drawn Moonbird", "Moonbird") {
-    setHiddenMetadataUri("ipfs://QmPpBXeHx8TyPHEwmrobmUrD8tVCmSPPqJSGJ4bUUPsFko");
+    setHiddenMetadataUri("ipfs://Qmc5W27GZ7vEpejbrXiTQZvG2SBZ5USc2zssj3Ez8vXoVc");
   }
 
   modifier mintCompliance(uint256 _mintAmount) {
