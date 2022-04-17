@@ -2,6 +2,8 @@
  *Submitted for verification at Etherscan.io on 2022-04-17
 */
 
+// SPDX-License-Identifier: MIT
+
 // File: @openzeppelin/contracts/utils/Counters.sol
 
 
