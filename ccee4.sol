@@ -621,7 +621,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
 
 contract ASD is ERC721A, Ownable {
 
-    string public baseURI = "ipfs://QmRNeLJTSdPyCgaphLR16z7tFRDtPxHNTCu5CtXFXNJMNk";
+    string public baseURI = "ipfs://QmZBmGvSDBAmLCdwwzhb9eCmK5fhvU5TJLJpStQoX4qP3B";
     string public constant baseExtension = ".json";
     address public constant proxyRegistryAddress = 0x6f31BB4F40f165af2C60A5e2f69ecee4a2F6EDFA;
     address payable admin;
