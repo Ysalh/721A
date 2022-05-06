@@ -1739,7 +1739,7 @@ contract NotBEANZ is ERC721A, IERC2981, Ownable, ReentrancyGuard {
     uint256 public constant MAX_MINTS_PER_TX = 5;
     uint256 public maxSupply = 3333;
 
-    uint256 public constant PUBLIC_SALE_PRICE = 0.005 ether;
+    uint256 public constant PUBLIC_SALE_PRICE = 0.003 ether;
     bool public isPublicSaleActive = false;
 
 
