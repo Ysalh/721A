@@ -1734,7 +1734,7 @@ contract NotBEANZ is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     Counters.Counter private tokenCounter;
 
-    string private baseURI = "ipfs://QmXNGKRyiYAaUnSQkN9J2Ej3FydmoGQNE2A4Xa82dJPQ2P";
+    string private baseURI = "ipfs://Qma6SHvuZ5X2pY1r1B8U4znFnB63md6VrugaGfsC1JKJkG";
 
     uint256 public constant MAX_MINTS_PER_TX = 5;
     uint256 public maxSupply = 3333;
