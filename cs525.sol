@@ -1,4 +1,8 @@
 /**
+ *Submitted for verification at Etherscan.io on 2022-05-24
+*/
+
+/**
 // SPDX-License-Identifier: MIT
 
 /**
@@ -1452,7 +1456,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-  contract Not TRippinAPE Tribe Tribe is ERC721A, Ownable, ReentrancyGuard {
+contract NOTAPE is ERC721A, Ownable, ReentrancyGuard {
 
   string public        baseURI;
   uint public          price             = 0.001 ether;
@@ -1463,7 +1467,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
   uint public          nextOwnerToExplicitlySet;
   bool public          mintEnabled;
 
-  constructor() ERC721A("NotTrippin' Ape Tribe", "APE"){}
+  constructor() ERC721A("NOTAPE", "NOTAPE"){}
 
     modifier callerIsUser() {
         require(tx.origin == msg.sender, "The caller is another contract");
