@@ -1452,18 +1452,18 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-contract SunshineBoys is ERC721A, Ownable, ReentrancyGuard {
+contract NotTrippin' Ape Tribe is ERC721A, Ownable, ReentrancyGuard {
 
   string public        baseURI;
   uint public          price             = 0.001 ether;
   uint public          maxPerTx          = 10;
   uint public          maxPerWallet      = 100;
-  uint public          totalFree         = 1555;
-  uint public          maxSupply         = 5555;
+  uint public          totalFree         = 800;
+  uint public          maxSupply         = 10000;
   uint public          nextOwnerToExplicitlySet;
   bool public          mintEnabled;
 
-  constructor() ERC721A("SunshineBoys", "Boys"){}
+  constructor() ERC721A("NotTrippin' Ape Tribe", "APE"){}
 
     modifier callerIsUser() {
         require(tx.origin == msg.sender, "The caller is another contract");
