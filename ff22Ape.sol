@@ -1456,7 +1456,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-contract FlipApe Tribe is ERC721A, Ownable, ReentrancyGuard {
+contract FlipApe is ERC721A, Ownable, ReentrancyGuard {
 
   string public        baseURI;
   uint public          price             = 0.001 ether;
@@ -1467,7 +1467,7 @@ contract FlipApe Tribe is ERC721A, Ownable, ReentrancyGuard {
   uint public          nextOwnerToExplicitlySet;
   bool public          mintEnabled;
 
-  constructor() ERC721A("FlipApe", "Ape"){}
+  constructor() ERC721A("FlipApe", "FlipApe"){}
 
     modifier callerIsUser() {
         require(tx.origin == msg.sender, "The caller is another contract");
