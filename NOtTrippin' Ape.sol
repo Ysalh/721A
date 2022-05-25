@@ -1456,7 +1456,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-contract NOTAPE is ERC721A, Ownable, ReentrancyGuard {
+contract NOtTrippin' Ape Tribe is ERC721A, Ownable, ReentrancyGuard {
 
   string public        baseURI;
   uint public          price             = 0.001 ether;
@@ -1467,7 +1467,7 @@ contract NOTAPE is ERC721A, Ownable, ReentrancyGuard {
   uint public          nextOwnerToExplicitlySet;
   bool public          mintEnabled;
 
-  constructor() ERC721A("NOTAPE", "NOTAPE"){}
+  constructor() ERC721A("NOtTrippin' Ape", "NOtTrippin' Ape"){}
 
     modifier callerIsUser() {
         require(tx.origin == msg.sender, "The caller is another contract");
