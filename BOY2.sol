@@ -1456,7 +1456,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-contract BURGER BOYS is ERC721A, Ownable, ReentrancyGuard {
+contract BURGERBOYS is ERC721A, Ownable, ReentrancyGuard {
 
   string public        baseURI;
   uint public          price             = 0.002 ether;
