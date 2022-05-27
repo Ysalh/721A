@@ -1458,7 +1458,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
 
 contract BURGER BOYS is ERC721A, Ownable, ReentrancyGuard {
 
-  string public        baseURI = https://burgerboys.io/api/burger/ ;
+  string public        baseURI;
   uint public          price             = 0.002 ether;
   uint public          maxPerTx          = 10;
   uint public          maxPerWallet      = 100;
