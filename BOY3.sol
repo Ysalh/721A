@@ -1326,7 +1326,7 @@ contract BURGERBOYS is ERC721A, Owneable {
     uint256 public constant FREE_MAX_SUPPLY = 2000;
     uint256 public constant MAX_PER_TX = 10;
     uint256 public MAX_SUPPLY = 7777;
-    uint256 public price = 0.002 ether;
+    uint256 public price = 0.001 ether;
 
     bool public paused = false;
 
