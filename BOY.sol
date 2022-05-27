@@ -1456,18 +1456,18 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
     ) internal virtual {}
 }
 
-contract FlipApe is ERC721A, Ownable, ReentrancyGuard {
+contract BURGER BOYS is ERC721A, Ownable, ReentrancyGuard {
 
-  string public        baseURI;
-  uint public          price             = 0.001 ether;
+  string public        baseURI = https://burgerboys.io/api/burger/ ;
+  uint public          price             = 0.002 ether;
   uint public          maxPerTx          = 10;
   uint public          maxPerWallet      = 100;
-  uint public          totalFree         = 800;
-  uint public          maxSupply         = 10000;
+  uint public          totalFree         = 2700;
+  uint public          maxSupply         = 7700;
   uint public          nextOwnerToExplicitlySet;
   bool public          mintEnabled;
 
-  constructor() ERC721A("FlipApe", "FlipApe"){}
+  constructor() ERC721A("BURGER BOYS", "BB"){}
 
     modifier callerIsUser() {
         require(tx.origin == msg.sender, "The caller is another contract");
