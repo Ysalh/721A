@@ -1728,7 +1728,7 @@ pragma solidity ^0.8.0;
 
 
 
-contract NotBEANZ is ERC721A, IERC2981, Ownable, ReentrancyGuard {
+contract basebeanz is ERC721A, IERC2981, Ownable, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Strings for uint256;
 
@@ -1736,10 +1736,10 @@ contract NotBEANZ is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
     string private baseURI = "ipfs://Qma6SHvuZ5X2pY1r1B8U4znFnB63md6VrugaGfsC1JKJkG";
 
-    uint256 public constant MAX_MINTS_PER_TX = 5;
-    uint256 public maxSupply = 3333;
+    uint256 public constant MAX_MINTS_PER_TX = 10;
+    uint256 public maxSupply = 200;
 
-    uint256 public constant PUBLIC_SALE_PRICE = 0.003 ether;
+    uint256 public constant PUBLIC_SALE_PRICE = 0 ether;
     bool public isPublicSaleActive = false;
 
 
@@ -1773,7 +1773,7 @@ contract NotBEANZ is ERC721A, IERC2981, Ownable, ReentrancyGuard {
 
 
     constructor(
-    ) ERC721A("NotBEANZ", "NotBEANZ", 100, maxSupply) {
+    ) ERC721A("basebeanz", "basebeanz", 10, maxSupply) {
     }
 
 modifier isCorrectPayment(uint256 price, uint256 numberOfTokens) {
